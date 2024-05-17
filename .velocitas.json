@@ -1,28 +1,18 @@
 {
-    "packages": {
-        "devenv-runtimes": "v4.0.0",
-        "devenv-github-workflows": "v6.0.1",
-        "devenv-github-templates": "v1.0.5",
-        "devenv-devcontainer-setup": "v2.2.1"
-    },
-    "components": [
-        "runtime-local",
-        "runtime-kanto",
-        "deployment-kanto",
-        "pantaris-integration",
-        "github-workflows",
-        "github-templates",
-        "devcontainer-setup",
-        "vehicle-signal-interface",
-        "sdk-installer",
-        "grpc-interface-support"
-    ],
-    "variables": {
-        "language": "python",
-        "repoType": "app",
-        "appManifestPath": "app/AppManifest.json",
-        "githubRepoId": "eclipse-velocitas/vehicle-app-python-template",
-        "generatedModelPath": "./gen/vehicle_model"
-    },
-    "cliVersion": "v0.9.1"
+  "packages": {
+    "https://github.com/USER/devenv-runtimes.git": "v4.0.0",
+    "https://github.com/USER/devenv-devcontainer-setup.git": "v2.2.1"
+  },
+  "variables": {
+    "language": "python",
+    "repoType": "app",
+    "gitLocation": "https://github.com/USER",
+    "mqttBrokerImage": "registry.hub.docker.com/library/eclipse-mosquitto:2.0.14",
+    "vehicleDatabrokerImage": "ghcr.io/eclipse-kuksa/kuksa-databroker:0.4.4",
+    "mockServiceImage": "ghcr.io/eclipse-kuksa/kuksa-mock-provider/mock-provider:0.4.0",
+    "appManifestPath": "app/AppManifest.json",
+    "githubRepoId": "eclipse-velocitas/vehicle-app-python-template",
+    "generatedModelPath": "./gen/vehicle_model"
+  },
+  "cliVersion": "v0.9.1"
 }
